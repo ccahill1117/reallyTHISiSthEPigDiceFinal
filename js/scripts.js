@@ -10,12 +10,7 @@ function Game() {
 Game.prototype.addPlayer = function(player) {
   this.players.push(player);
 }
-// }
-//
-// Game.prototype.assignID = function() {
-//   this.currentId += 1;
-//   return this.currentId;
-// }
+
 
 function RollDice() {
   return Math.floor(Math.random()*6)+1;
@@ -28,7 +23,6 @@ Game.prototype.Roll = function(Roll) {
   else if (Roll = 1) {
     this.roll = 0;
     this.temp = 0;
-    // this.turn = "it's not your turn!"
   }
   return this.roll;
 }
